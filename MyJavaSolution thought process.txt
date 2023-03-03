@@ -1,0 +1,29 @@
+BTWWWW a very obvious solution is:
+
+return haystack.indexOf(needle);
+
+
+
+Basically i thought okay:
+
+if the haystack doesnt contain the needle then obv return -1.
+
+otherwise
+track each character from haystack and needle,
+if they are equal, add one to a variable, if by the end that variable and keep track of the index is the same size as the needle then fix the index to the correct beginner one.
+
+it does not pass the case where "hello" is the haystack and "ll" is the needle.
+
+0 , 1
+
+c1 = haystack.charAt(0) = h
+c2 = needle.charAt(0) = l
+
+c1 = haystack.charAt(1) = e
+c2 = needle.charAt(1) = l
+
+then y = 0 
+
+okayyyyy i get why the output for mine is 0 even tho its supposed to be not that okok.
+
+it doesnt work for me bc up until that testcase, the haystack and the needle started with the same letters and there was a diff in the end of the haystack...double pointer is better i guess. 
